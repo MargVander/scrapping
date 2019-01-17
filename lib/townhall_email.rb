@@ -1,6 +1,8 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'xpath'
+
 
 def get_townhall_email(townhall_url)
 	town_email = []
@@ -30,12 +32,10 @@ end
 def townhall_url
 	page = Nokogiri::HTML(open("http://annuaire-des-mairies.com/val-d-oise.html"))
 	town_link = []
-	#town_name = []
 	page.xpath('//p/a').each do |el|
 	    town_link << "http://annuaire-des-mairies.com#{el.attr('href')[1..-1]}"
-		#town_name << el.text
 	end
 	return town_link
 end
 
-get_townhall_email(townhall_url)
+#get_townhall_email(townhall_url)

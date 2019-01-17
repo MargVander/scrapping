@@ -1,6 +1,7 @@
 require 'rubygems'
 require 'nokogiri'
 require 'open-uri'
+require 'xpath'
 
 def crypto_scrapper
 	symbol = []
@@ -22,4 +23,4 @@ def crypto_scrapper
 
 end
 
-crypto_scrapper
+#crypto_scrapper

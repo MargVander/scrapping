@@ -40,6 +40,8 @@ GEM
       unicode-display_width (~> 1.0, >= 1.0.1)
     ruby-progressbar (1.10.0)
     unicode-display_width (1.4.1)
+    xpath (3.2.0)
+      nokogiri (~> 1.8)
 
 PLATFORMS
   ruby
@@ -49,6 +51,7 @@ DEPENDENCIES
   pry
   rspec
   rubocop (~> 0.57.2)
+  xpath
 
 RUBY VERSION
    ruby 2.5.1p57
