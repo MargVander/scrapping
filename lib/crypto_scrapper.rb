@@ -23,5 +23,3 @@ def crypto_scrapper
 end
 
 crypto_scrapper
-# //*[@id="id-bitcoin"]/td[3]
-# //*[@id="id-ripple"]/td[3]
